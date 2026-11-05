@@ -8,6 +8,16 @@
 <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8D%3C/text%3E%3C/svg%3E" rel="icon"/>
 <link href="assets/style.css" rel="stylesheet"/><link href="assets/performance.css" rel="stylesheet"/></head>
 <body style="background-image: url(assets/image-c87bb03ca28e94.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><img alt="" aria-hidden="true" decoding="async" draggable="false" fetchpriority="high" id="terra-wallpaper" loading="eager" src="assets/image-1d99efe0e62f00.jpg"/>
+<div id="ecoquest-confirm-notice" class="ecoquest-confirm-notice" role="dialog" aria-modal="true" aria-labelledby="ecoquest-confirm-title" hidden><div class="ecoquest-confirm-card"><span class="ecoquest-confirm-icon" aria-hidden="true">✓</span><h2 id="ecoquest-confirm-title">E-mail confirmado!</h2><p>Agora volte ao app <strong>EcoQuest</strong> e toque em <strong>Entrar</strong> com seu e-mail e senha.</p><p>Se estiver no celular, abra o aplicativo pela tela inicial.</p><button id="ecoquest-confirm-close" type="button">Entendi, vou voltar ao app</button></div></div>
+<script>(function(){
+  var p=new URLSearchParams(location.hash.slice(1));
+  if(p.get('type')!=='signup'||!p.get('access_token'))return;
+  history.replaceState(null,'',location.pathname+location.search);
+  var notice=document.getElementById('ecoquest-confirm-notice');
+  var button=document.getElementById('ecoquest-confirm-close');
+  notice.hidden=false;button.focus();
+  button.addEventListener('click',function(){notice.hidden=true});
+})();</script>
 <script>/* aero: fundo numa camada fixa (mesma imagem do body, só que fixa também no iPhone) */
 (function(){try{var b=document.body,img=b.style.backgroundImage;if(!img||img==='none')return;
 var s=document.createElement('div');s.id='aero-sky';s.setAttribute('aria-hidden','true');s.style.backgroundImage=img;

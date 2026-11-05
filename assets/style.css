@@ -1800,3 +1800,12 @@ body::before{z-index:0!important;background:linear-gradient(180deg,rgba(0,18,60,
 #s4 .cmp:after{z-index:3}
 #s4 .future-photo-note{font:italic 11px/1.45 inherit;color:#486d81;margin:9px 1px 16px;opacity:.86}
 @media(max-width:520px){#s4 .cmp{aspect-ratio: 1.55/1;min-height:180px}}
+/* Aviso de retorno ao EcoQuest após a confirmação de e-mail. */
+.ecoquest-confirm-notice[hidden]{display:none!important}
+.ecoquest-confirm-notice{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:20px;background:rgba(3,47,74,.78);backdrop-filter:blur(8px)}
+.ecoquest-confirm-card{width:min(440px,100%);box-sizing:border-box;padding:27px 25px;text-align:center;border:2px solid #fff;border-radius:24px;background:linear-gradient(165deg,#f2ffff 0%,#bbebef 55%,#9bdcc8 100%);box-shadow:0 20px 60px #002b4f99;color:#104f64;font-family:"Trebuchet MS",Arial,sans-serif}
+.ecoquest-confirm-icon{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(#a5ffd1,#26ae76);border:2px solid #fff;color:#064d3a;font-size:40px;font-weight:900;box-shadow:0 5px 13px #267d6580}
+.ecoquest-confirm-card h2{margin:0 0 12px;font-size:clamp(25px,6vw,33px);line-height:1.15;color:#08667e}
+.ecoquest-confirm-card p{margin:10px 0;font-size:17px;line-height:1.5}
+.ecoquest-confirm-card button{margin-top:14px;padding:13px 20px;width:100%;border:2px solid #fff;border-radius:14px;background:linear-gradient(#d6fff1,#36b78c);color:#075367;font:900 17px "Trebuchet MS",Arial,sans-serif;box-shadow:0 4px 11px #267d6580;cursor:pointer}
+.ecoquest-confirm-card button:focus-visible{outline:3px solid #086b92;outline-offset:3px}
