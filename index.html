@@ -40,10 +40,10 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 <div aria-hidden="true" class="fld srch"><span>Um mundo melhor começa aqui</span><span>🔍</span></div>
 </div>
 <nav aria-label="Atalhos" class="fav">
-<button data-go="3">☀ Reduzir</button><button data-go="5">✿ Reutilizar</button><button data-go="2">♻ Reciclar</button>
+<button data-go="3">☀ Reduzir</button><button data-go="2">✿ Reutilizar</button><button data-go="2">♻ Reciclar</button>
 </nav>
 <div class="tabs" id="tabs" role="tablist">
-<button aria-selected="true" class="on" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">⌂</span><span class="tab-label">Início</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">☁</span><span class="tab-label">O problema</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">♻</span><span class="tab-label">Soluções</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">✓</span><span class="tab-label">Atitudes</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">◉</span><span class="tab-label">Nosso futuro</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">▤</span><span class="tab-label">Materiais</span></button>
+<button aria-selected="true" class="on" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">⌂</span><span class="tab-label">Início</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">☁</span><span class="tab-label">O problema</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">♻</span><span class="tab-label">Soluções</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">✓</span><span class="tab-label">Atitudes</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">◉</span><span class="tab-label">Nosso futuro</span></button><button aria-selected="false" role="tab" type="button"><span aria-hidden="true" class="tab-symbol">▤</span><span class="tab-label">Fontes</span></button>
 </div>
 <div class="page">
 <aside class="side">
@@ -53,7 +53,7 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 <div>
 <div class="nm"><h3>Nosso planeta</h3><div class="sub">seu espaço de transformação</div></div>
 <ul class="st"><li><i class="bead">🌳</i><span>status: ainda dá tempo</span></li><li><i class="bead">🌿</i><span>consumo: consciente</span></li><li><i class="bead">💡</i><span>ideia: cuidar já</span></li></ul>
-<div class="round"><button aria-label="Ver a solução" class="orb g" data-go="2">♻</button><button aria-label="Ver os materiais" class="orb" data-go="5">✿</button><button aria-label="Ver as atitudes" class="orb g" data-go="3">✔</button></div>
+<div class="round"><button aria-label="Ver a solução" class="orb g" data-go="2">♻</button><button aria-label="Ver as fontes" class="orb" data-go="5">✿</button><button aria-label="Ver as atitudes" class="orb g" data-go="3">✔</button></div>
 </div>
 <div aria-label="Dicas do planeta" class="gadget" role="region">
 <div class="gtop"><svg aria-hidden="true"><use href="#bdg"></use></svg><b>O Planeta Fala</b></div>
@@ -125,7 +125,7 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 <label class="ck"><input type="checkbox"/><span><b>Desligar a tela</b> quando terminar de usar TV ou computador.</span><small>MISSÃO 05</small></label>
 <label class="ck"><input type="checkbox"/><span><b>Guardar a comida que sobrou</b> para consumir depois, quando houver sobra.</span><small>MISSÃO 06</small></label>
 </div>
-<div class="mission-foot"><span>✦ Seus compromissos ficam salvos apenas neste navegador.</span><button class="bb gr" data-go="5" type="button">Levar a campanha adiante ↗</button></div>
+<div class="mission-foot"><span>✦ Seus compromissos ficam salvos apenas neste navegador.</span><button class="bb gr" data-go="5" type="button">Ver fontes e créditos ↗</button></div>
 <div class="decision-game"><div><span class="reset-tag">◈ ESCOLHA O PRÓXIMO PASSO</span><h3>Um fone parou de funcionar. E agora?</h3><p>O caminho mais sustentável nem sempre é comprar a versão “eco” mais nova.</p></div><div class="decision-options"><button data-decision="comprar" type="button">Comprar outro imediatamente</button><button data-decision="consertar" type="button">Ver se tem conserto</button><button data-decision="jogar" type="button">Jogar no lixo comum</button></div><p aria-live="polite" class="decision-feedback" id="decision-feedback">Escolha uma opção para avaliar o impacto.</p></div>
 </section>
 <section aria-label="Nosso futuro" class="sec" id="s4" role="tabpanel">
@@ -141,12 +141,8 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 <p class="future-photo-note">Cenários fictícios criados com IA para imaginar dois caminhos possíveis. Não são fotografias do futuro.</p>
 <div class="two"><div><span class="tag">se nada mudar</span>Consumo descartável, desigualdade no acesso ao saneamento e cidades que empurram o problema para longe.</div><div><span class="tag">se agirmos</span>Produtos reparáveis, cooperativas fortalecidas, políticas públicas e tecnologias que servem às pessoas.</div></div>
 <div class="future-contract"><div><span class="reset-tag">TRANSMISSÃO DO FUTURO</span><h3>O que precisa mudar além da nossa casa?</h3></div><div class="future-tags"><span>▣ Coleta e saneamento</span><span>✿ Proteção da natureza</span><span>↺ Direito ao reparo</span><span>◎ Educação ambiental</span></div></div></section>
-<section aria-label="Materiais" class="sec" id="s5" role="tabpanel"><div class="section-kicker">✳ CENTRAL DE TRANSMISSÃO / MATERIAL DA CAMPANHA</div><h2 class="t">Tire a ideia da tela.<br/><span class="accent-title">Coloque no mundo.</span></h2><p class="lead">Um projeto ambiental fica mais forte quando sai do discurso e vira conversa, cartaz, vídeo, mutirão e mudança concreta. Aqui está um kit para usar na escola.</p>
-<div class="campaign-poster"><div class="poster-noise"></div><span class="poster-overline">TERRA.AERO / CAMPANHA AMBIENTAL</span><div class="poster-earth"><img alt="Terra" decoding="async" draggable="false" fetchpriority="low" loading="lazy" src="assets/image-76457970e9b4bf.webp"/></div><h3>Nosso planeta<br/>não tem botão<br/><em>de reiniciar.</em></h3><p>Não espere uma segunda Terra. Comece pela que existe: menos desperdício, mais reparo, melhor coleta e ação coletiva.</p><div class="poster-footer"><span>REPENSAR · REDUZIR · REUTILIZAR · RECICLAR</span><span>● PLANETA ONLINE</span></div></div>
-<div class="campaign-actions"><button class="bb gr" id="copy-campaign" type="button">▣ Copiar mensagem da campanha</button><button class="bb light" id="print-poster" type="button">▤ Imprimir cartaz</button><span aria-live="polite" id="copy-status" role="status"></span></div>
-<details open=""><summary>✦ Plano de ação: 7 dias para mudar um hábito</summary><div class="agenda-days"><p><b>DIA 1–2 / OBSERVE</b> — Descubra o que mais vira lixo na sua rotina ou escola. Registre sem expor ninguém.</p><p><b>DIA 3–4 / EXPERIMENTE</b> — Teste uma alternativa: refil, reparo, garrafa durável, troca ou coleta adequada.</p><p><b>DIA 5–6 / CONVERSE</b> — Pergunte à escola como funciona a coleta e quais barreiras existem.</p><p><b>DIA 7 / COMPARTILHE</b> — Mostre o que aprendeu e proponha um próximo passo verificável.</p></div></details>
-<details><summary>◈ Roteiro de vídeo · 30 segundos</summary><p><b>00–07s:</b> imagem de um produto descartado. Narração: “O que acontece depois que a gente joga fora?”</p><p><b>07–16s:</b> imagens de coleta, reparo ou triagem. Narração: “O resíduo não some. Ele muda de lugar — e de mãos.”</p><p><b>16–25s:</b> uma ação local concreta. Narração: “A solução começa antes da lixeira e continua com a cidade inteira.”</p><p><b>25–30s:</b> slogan em tela: <b>“Nosso planeta não tem botão de reiniciar.”</b></p></details>
-<details><summary>▤ Créditos, dados e fontes</summary><p>Indicadores brasileiros: <a href="https://www.abrema.org.br/panorama/" rel="noopener noreferrer" target="_blank">ABREMA — Panorama 2025</a> (dados de 2024). Cenário global: <a href="https://www.unep.org/pt-br/publications/report/panorama-global-do-manejo-de-residuos-em-2024" rel="noopener noreferrer" target="_blank">PNUMA — Panorama Global 2024</a>. A inspiração visual e narrativa em WALL-E é uma referência cultural; a campanha é um projeto escolar independente.</p><p>Fotografias preservadas do arquivo original; créditos identificados nas legendas. As imagens do comparador são ilustrações, não fotografias do futuro.</p></details>
+<section aria-label="Fontes" class="sec" id="s5" role="tabpanel"><div class="section-kicker">✳ FONTES E CRÉDITOS</div><h2 class="t">Dados para entender.<br/><span class="accent-title">Ações para começar.</span></h2><p class="lead">Os números e imagens desta campanha têm fontes identificadas. Consulte os estudos e saiba como os cenários visuais foram usados.</p>
+<details open=""><summary>▤ Créditos, dados e fontes</summary><p>Indicadores brasileiros: <a href="https://www.abrema.org.br/panorama/" rel="noopener noreferrer" target="_blank">ABREMA — Panorama 2025</a> (dados de 2024). Cenário global: <a href="https://www.unep.org/pt-br/publications/report/panorama-global-do-manejo-de-residuos-em-2024" rel="noopener noreferrer" target="_blank">PNUMA — Panorama Global 2024</a>. A inspiração visual e narrativa em WALL-E é uma referência cultural; a campanha é um projeto escolar independente.</p><p>Fotografias preservadas do arquivo original; créditos identificados nas legendas. As imagens do comparador são ilustrações, não fotografias do futuro.</p></details>
 <div class="big">O planeta é real. O futuro também. <strong>Nosso planeta não tem botão de reiniciar.</strong></div>
 </section>
 </main>
@@ -161,7 +157,7 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 </div>
 </div><footer class="site-footer"><span><b>terra.aero</b> / Projeto escolar de conscientização ambiental</span><span>Feito para um mundo mais verde ✳</span></footer>
 <script>
-var tabs=[].slice.call(document.querySelectorAll('#tabs button')),secs=[].slice.call(document.querySelectorAll('.sec')),names=['inicio','problema','solucao','atitudes','painel','materiais'],cur=0,$=function(i){return document.getElementById(i)};
+var tabs=[].slice.call(document.querySelectorAll('#tabs button')),secs=[].slice.call(document.querySelectorAll('.sec')),names=['inicio','problema','solucao','atitudes','painel','fontes'],cur=0,$=function(i){return document.getElementById(i)};
 function go(i){cur=(i+secs.length)%secs.length;secs.forEach(function(s,k){s.classList.toggle('on',k===cur)});tabs.forEach(function(t,k){t.classList.toggle('on',k===cur);t.setAttribute('aria-selected',k===cur?'true':'false')});$('addr').textContent='planeta.verde/'+names[cur];$('seekf').style.width=$('seekt').style.left=((cur+1)/secs.length*100)+'%';$('pg').textContent=(cur+1)+' / '+secs.length;tabs[cur].scrollIntoView({block:'nearest',inline:'center'})}
 tabs.forEach(function(t,k){t.onclick=function(){go(k)}});
 [].forEach.call(document.querySelectorAll('[data-go]'),function(b){b.onclick=function(){go(+b.dataset.go)}});
@@ -238,17 +234,6 @@ go(0);
    const status=doc.getElementById('msg');if(status)status.textContent='SISTEMA: ERRO 404 — planeta reserva não encontrado. Solução disponível: agir no presente.';
    const box=doc.querySelector('.reset-box');if(box){box.classList.remove('fault');void box.offsetWidth;box.classList.add('fault');window.setTimeout(function(){box.classList.remove('fault')},750)}
  });
- const copy=doc.getElementById('copy-campaign');
- const campaignText='NOSSO PLANETA NÃO TEM BOTÃO DE REINICIAR.\n\nO lixo não desaparece quando é recolhido. Antes de descartar, repense: dá para reduzir, consertar, doar ou reutilizar? Separe resíduos conforme a coleta da sua cidade e cobre soluções coletivas.\n\nTERRA.AERO — Campanha de conscientização ambiental. #SemBotaoDeReiniciar';
- if(copy)copy.addEventListener('click',async function(){
-   const status=doc.getElementById('copy-status');let done=false;
-   try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(campaignText);done=true}}catch(e){}
-   if(!done){
-    const temp=doc.createElement('textarea');temp.value=campaignText;temp.style.cssText='position:fixed;left:-2000px;top:0;opacity:0';doc.body.appendChild(temp);temp.focus();temp.select();try{done=doc.execCommand('copy')}catch(e){}temp.remove();
-   }
-   if(status)status.textContent=done?'✦ Texto copiado!':'Não foi possível copiar automaticamente. Selecione o texto do cartaz para copiar.';
- });
- const print=doc.getElementById('print-poster');if(print)print.addEventListener('click',function(){window.print()});
 })();
 
 </script>
