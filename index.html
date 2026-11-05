@@ -9,6 +9,7 @@
 <link href="assets/style.css" rel="stylesheet"/><link href="assets/performance.css" rel="stylesheet"/></head>
 <body style="background-image: url(assets/image-c87bb03ca28e94.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"><img alt="" aria-hidden="true" decoding="async" draggable="false" fetchpriority="high" id="terra-wallpaper" loading="eager" src="assets/image-1d99efe0e62f00.jpg"/>
 <div id="ecoquest-confirm-notice" class="ecoquest-confirm-notice" role="dialog" aria-modal="true" aria-labelledby="ecoquest-confirm-title" hidden><div class="ecoquest-confirm-card"><span class="ecoquest-confirm-icon" aria-hidden="true">✓</span><h2 id="ecoquest-confirm-title">E-mail confirmado!</h2><p>Agora volte ao app <strong>EcoQuest</strong> e toque em <strong>Entrar</strong> com seu e-mail e senha.</p><p>Se estiver no celular, abra o aplicativo pela tela inicial.</p><button id="ecoquest-confirm-close" type="button">Entendi, vou voltar ao app</button></div></div>
+<a class="ecoquest-download-float" href="https://github.com/CombatGolf/Nosso-Planeta/releases/download/ecoquest-v1.1.7/EcoQuest-1.1.7.apk" rel="noopener noreferrer" aria-label="Baixar aplicativo EcoQuest para Android">↓ Baixar app Android</a>
 <script>(function(){
   var p=new URLSearchParams(location.hash.slice(1));
   if(p.get('type')!=='signup'||!p.get('access_token'))return;
@@ -117,12 +118,12 @@ new MutationObserver(function(){var v=b.style.backgroundImage;if(v&&v!=='none')s
 <section aria-label="Atitudes" class="sec" id="s3" role="tabpanel"><div class="section-kicker">✳ MISSÃO 03 / DE ESPECTADOR A PARTICIPANTE</div><h2 class="t">Pequenas decisões.<br/><span class="accent-title">Impacto coletivo.</span></h2><p class="lead">Escolha compromissos possíveis para sua realidade. Não se trata de acertar sempre: trata-se de transformar uma ação isolada em hábito e chamar mais gente para participar.</p>
 <div class="mission-progress"><div><span>PAINEL DE MISSÃO</span><strong><b id="cnt">0</b><small> / 6 concluídas</small></strong></div><div class="barp"><i id="fill"></i></div><p id="verdict" role="status">Selecione sua primeira missão.</p></div>
 <div class="mission-list" id="checks">
-<label class="ck"><input type="checkbox"/><span><b>Separar os recicláveis</b> conforme as regras de coleta do meu bairro, mantendo materiais secos e sem restos de comida.</span><small>MISSÃO 01</small></label>
-<label class="ck"><input type="checkbox"/><span><b>Evitar um descartável</b> levando garrafa ou recipiente reutilizável quando puder.</span><small>MISSÃO 02</small></label>
-<label class="ck"><input type="checkbox"/><span><b>Prolongar a vida de um objeto:</b> consertar, emprestar, trocar ou doar em boas condições.</span><small>MISSÃO 03</small></label>
-<label class="ck"><input type="checkbox"/><span><b>Encontrar um ponto de coleta</b> para pilhas, baterias ou eletrônicos; nunca colocá-los no lixo comum.</span><small>MISSÃO 04</small></label>
-<label class="ck"><input type="checkbox"/><span><b>Evitar desperdício</b> de alimentos, água ou eletricidade em alguma situação concreta.</span><small>MISSÃO 05</small></label>
-<label class="ck"><input type="checkbox"/><span><b>Fazer uma ação em grupo:</b> conversar com a escola, condomínio ou bairro sobre uma melhoria possível.</span><small>MISSÃO 06</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Fechar a torneira</b> enquanto escova os dentes.</span><small>MISSÃO 01</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Fechar o chuveiro</b> enquanto se ensaboa, se isso for possível no seu banho.</span><small>MISSÃO 02</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Apagar a luz</b> ao sair de um cômodo vazio.</span><small>MISSÃO 03</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Desligar a torneira</b> enquanto ensaboa as mãos ou a louça.</span><small>MISSÃO 04</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Desligar a tela</b> quando terminar de usar TV ou computador.</span><small>MISSÃO 05</small></label>
+<label class="ck"><input type="checkbox"/><span><b>Guardar a comida que sobrou</b> para consumir depois, quando houver sobra.</span><small>MISSÃO 06</small></label>
 </div>
 <div class="mission-foot"><span>✦ Seus compromissos ficam salvos apenas neste navegador.</span><button class="bb gr" data-go="5" type="button">Levar a campanha adiante ↗</button></div>
 <div class="decision-game"><div><span class="reset-tag">◈ ESCOLHA O PRÓXIMO PASSO</span><h3>Um fone parou de funcionar. E agora?</h3><p>O caminho mais sustentável nem sempre é comprar a versão “eco” mais nova.</p></div><div class="decision-options"><button data-decision="comprar" type="button">Comprar outro imediatamente</button><button data-decision="consertar" type="button">Ver se tem conserto</button><button data-decision="jogar" type="button">Jogar no lixo comum</button></div><p aria-live="polite" class="decision-feedback" id="decision-feedback">Escolha uma opção para avaliar o impacto.</p></div>
@@ -170,8 +171,8 @@ document.addEventListener('keydown',function(e){var a=document.activeElement;if(
 function mem(sel,key,after){var c=document.querySelectorAll(sel);try{var v=JSON.parse(localStorage.getItem(key)||'null');if(v)c.forEach(function(x,i){x.checked=!!v[i]})}catch(e){}
 function up(){try{localStorage.setItem(key,JSON.stringify([].map.call(c,function(x){return x.checked})))}catch(e){}after(c)}
 c.forEach(function(x){x.onchange=up});after(c)}
-mem('#checks input','commit',function(c){var n=[].filter.call(c,function(x){return x.checked}).length;$('cnt').textContent=n;$('fill').style.width=(n/c.length*100)+'%';$('verdict').textContent=n===c.length?'Compromisso completo. O planeta agradece! 🌱':n>=3?'Muito bem, você já cumpre as três atitudes mínimas.':''});
-mem('.d','diaverde',function(c){$('dia').textContent='Pontos de hoje: '+[].filter.call(c,function(x){return x.checked}).length+' de '+c.length});
+mem('#checks input','commit-v2',function(c){var n=[].filter.call(c,function(x){return x.checked}).length;$('cnt').textContent=n;$('fill').style.width=(n/c.length*100)+'%';$('verdict').textContent=n===c.length?'Compromisso completo. O planeta agradece! 🌱':n>=3?'Muito bem, você já cumpre as três atitudes mínimas.':''});
+mem('.d','diaverde',function(c){var day=$('dia');if(day)day.textContent='Pontos de hoje: '+[].filter.call(c,function(x){return x.checked}).length+' de '+c.length});
 var tp=$('top'),rg=$('rng'),hd=$('handle'),cmp=document.querySelector('.cmp');function cut(){var v=Math.max(0,Math.min(100,+rg.value||0));tp.style.clipPath='inset(0 '+(100-v)+'% 0 0)';hd.style.left=v+'%'}rg.oninput=cut;cut();function setCmp(e){if(!cmp)return;var r=cmp.getBoundingClientRect();var clientX=e.touches?e.touches[0].clientX:e.clientX;var v=((clientX-r.left)/r.width)*100;rg.value=Math.max(0,Math.min(100,v));cut()}if(cmp){var dragging=false;cmp.addEventListener('pointerdown',function(e){dragging=true;cmp.classList.add('dragging');setCmp(e)});window.addEventListener('pointermove',function(e){if(!dragging)return;setCmp(e)});window.addEventListener('pointerup',function(){dragging=false;cmp.classList.remove('dragging')});cmp.addEventListener('click',setCmp);cmp.addEventListener('touchstart',setCmp,{passive:true});cmp.addEventListener('touchmove',setCmp,{passive:true});}
 go(0);
 </script>

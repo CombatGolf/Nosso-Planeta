@@ -1813,3 +1813,6 @@ body::before{z-index:0!important;background:linear-gradient(180deg,rgba(0,18,60,
 .ecoquest-download-copy{flex:1 1 250px}.ecoquest-download-kicker{font-size:11px;font-weight:900;letter-spacing:.14em;color:#168f72}.ecoquest-download-copy h3{margin:3px 0 5px;font-size:clamp(18px,3vw,24px);line-height:1.2;color:#086785}.ecoquest-download-copy p{margin:0;font-size:13px;line-height:1.45}
 .ecoquest-download-button{text-decoration:none;flex:0 1 auto;white-space:normal;text-align:center}.ecoquest-download-card small{width:100%;font-weight:800;color:#2f7180}
 @media(max-width:600px){.ecoquest-download-card{padding:17px;gap:12px}.ecoquest-download-button{width:100%}}
+.ecoquest-download-float{position:fixed;z-index:90;right:18px;bottom:20px;max-width:220px;padding:12px 18px;border:2px solid #fff;border-radius:999px;background:linear-gradient(#caffc1,#45ce65 50%,#128b3d);box-shadow:0 5px 0 #157c41,0 12px 24px #06466588,inset 0 2px 3px #fff;color:#074e35;text-decoration:none;text-align:center;font:900 14px "Trebuchet MS",Arial,sans-serif;letter-spacing:.01em}
+.ecoquest-download-float:focus-visible{outline:3px solid #073b79;outline-offset:3px}
+@media(max-width:600px){.ecoquest-download-float{right:12px;bottom:72px;max-width:170px;padding:10px 12px;font-size:12px}}
