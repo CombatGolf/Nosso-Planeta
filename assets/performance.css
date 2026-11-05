@@ -1,0 +1,4 @@
+/* Render optimization without removing visual effects. */
+.sec:not(.on){content-visibility:hidden!important;}
+.sec.on{isolation:isolate;}
+/* Avoid rasterizing invisible sections during initial page load. */
